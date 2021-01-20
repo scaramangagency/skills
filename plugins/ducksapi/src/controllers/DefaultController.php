@@ -43,6 +43,8 @@ class DefaultController extends Controller
      */
     public function actionSetDucks($id = null)
     {
+        $this->requirePostRequest();
+        
         return DucksApi::$plugin->ducksApiService->setDucks($id, $this->request->getRawBody());
     }
 
@@ -51,8 +53,6 @@ class DefaultController extends Controller
      */
     public function actionGetDucks($id = null)
     {
-        $this->requirePostRequest();
-        
         return DucksApi::$plugin->ducksApiService->getDucks($id);
     }
 
