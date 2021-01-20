@@ -1,0 +1,44 @@
+{
+    "name": "scaramangagency/ducks-api",
+    "description": "RESTful API to CRUD ducks",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "ducks api"
+    ],
+    "support": {
+        "docs": "???",
+        "issues": "???"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Scaramanga Agency",
+            "homepage": "https://scaramanga.agency"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "scaramangagency\\ducksapi\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Ducks API",
+        "handle": "ducks-api",
+        "developer": "Scaramanga Agency",
+        "developerUrl": "https://scaramanga.agency",
+        "documentationUrl": "???",
+        "changelogUrl": "???",
+        "components": {
+            "ducksApiService": "scaramangagency\\ducksapi\\services\\DucksApiService"
+        },
+        "class": "scaramangagency\\ducksapi\\DucksApi"
+    }
+}

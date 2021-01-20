@@ -18,7 +18,8 @@ return [
         'cpTrigger' => 'admin',
         'securityKey' => App::env('SECURITY_KEY'),
         'disallowRobots' => true,
-        'headlessMode' => true
+        'headlessMode' => true,
+        'enableCsrfProtection' => false
     ],
 
     'dev' => [

@@ -1,0 +1,27 @@
+contentColumnType: 'decimal(12,2)'
+fieldGroup: afc11596-e0ac-42ec-81c3-74520da8ae1d
+handle: price
+instructions: ''
+name: Price
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  decimals: '2'
+  defaultValue: null
+  initialRows: '4'
+  max: null
+  min: '0'
+  multiline: ''
+  placeholder: ''
+  prefix: ''
+  previewCurrency: ''
+  previewFormat: decimal
+  size: null
+  suffix: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

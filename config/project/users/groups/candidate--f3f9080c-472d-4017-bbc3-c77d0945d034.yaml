@@ -1,0 +1,8 @@
+description: ''
+handle: candidate
+name: Candidate
+permissions:
+  - 'createentries:3fc86b79-7aa6-4fc9-9417-ac1621615d26'
+  - 'publishentries:3fc86b79-7aa6-4fc9-9417-ac1621615d26'
+  - 'deleteentries:3fc86b79-7aa6-4fc9-9417-ac1621615d26'
+  - 'editentries:3fc86b79-7aa6-4fc9-9417-ac1621615d26'

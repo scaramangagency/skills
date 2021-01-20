@@ -1,7 +1,8 @@
 {
   "require": {
     "craftcms/cms": "^3.5.10",
-    "vlucas/phpdotenv": "^3.4.0"
+    "vlucas/phpdotenv": "^3.4.0",
+    "scaramangagency/ducks-api": "1.0.0"
   },
   "require-dev": {
     "yiisoft/yii2-shell": "^2.0.3"
@@ -22,5 +23,14 @@
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     ]
-  }
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "plugins/ducksapi",
+      "options": {
+        "symlink": true
+      }
+    }
+  ]
 }

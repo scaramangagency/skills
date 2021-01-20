@@ -1,0 +1,17 @@
+dateModified: 1611156071
+email:
+  fromEmail: support@scaramanga.agency
+  fromName: 'Skills Test'
+  transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  ducks-api:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: pro
+  live: true
+  name: 'Skills Test'
+  retryDuration: null
+  schemaVersion: 3.5.13
+  timeZone: Europe/London

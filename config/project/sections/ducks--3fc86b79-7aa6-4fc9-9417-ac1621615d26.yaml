@@ -1,0 +1,23 @@
+enableVersioning: false
+handle: ducks
+name: Ducks
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  d825b745-66d4-4d39-962e-b1ee44434c47:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9ff11fb6fb2bb4b088c2cfe7b2c97f26",
+    "content-hash": "db15b848630328453050cc707c0a2541",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2670,6 +2670,61 @@
             ],
             "description": "A polyfill for getallheaders.",
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "scaramangagency/ducks-api",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "plugins/ducksapi",
+                "reference": "0d9f62f0a8398851bef5a2f7cb48b64a9d6c291f"
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Ducks API",
+                "handle": "ducks-api",
+                "developer": "Scaramanga Agency",
+                "developerUrl": "https://scaramanga.agency",
+                "documentationUrl": "???",
+                "changelogUrl": "???",
+                "components": {
+                    "ducksApiService": "scaramangagency\\ducksapi\\services\\DucksApiService"
+                },
+                "class": "scaramangagency\\ducksapi\\DucksApi"
+            },
+            "autoload": {
+                "psr-4": {
+                    "scaramangagency\\ducksapi\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Scaramanga Agency",
+                    "homepage": "https://scaramanga.agency"
+                }
+            ],
+            "description": "RESTful API to CRUD ducks",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "ducks api"
+            ],
+            "support": {
+                "docs": "???",
+                "issues": "???"
+            },
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "sebastian/diff",
