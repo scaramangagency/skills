@@ -5,9 +5,10 @@ You should send your `Username` and `Password` through a `Basic Auth` header.
 **API Endpoints**
 ----
 **get-ducks**
+
 _Return a list of all ducks_
 
-|||
+|Parameter|Content|
 |--|--|
 |URL|`/get-ducks`|
 |Method|`GET`|
@@ -15,9 +16,10 @@ _Return a list of all ducks_
 |Error Response|**Invalid Credentials** <br>```{"name":"Unauthorized","message":"Your request was made with invalid credentials.","code":0,"status":401,"type":"yii\\web\\UnauthorizedHttpException"}```|
 
 **get-ducks/1**
+
 _Return a specific duck from supplied ID_
 
-|||
+|Parameter|Content|
 |--|--|
 |URL|`/get-ducks/<id>`|
 |Method|`GET`|
@@ -25,9 +27,10 @@ _Return a specific duck from supplied ID_
 |Error Response|**Invalid Credentials** <br>```{"name":"Unauthorized","message":"Your request was made with invalid credentials.","code":0,"status":401,"type":"yii\\web\\UnauthorizedHttpException"}```<br>**No Record**<br>```{"name":"Bad Request","message":"A duck does not exist with that id.","code":0,"status":400,"type":"yii\\web\\BadRequestHttpException"}```<br>**Not your duck**<br>```{"name":"Unauthorized","message":"You do not have permissions to select this duck.","code":0,"status":401,"type":"yii\\web\\UnauthorizedHttpException"}```|
 
 **set-ducks**
+
 _Add a new duck_
 
-|||
+|Parameter|Content|
 |--|--|
 |URL|`/set-ducks`|
 |Method|`POST`|
@@ -43,9 +46,10 @@ Required Parameters
 |Price|`float` `i.e. 20.00`|
 
 **set-ducks/1**
+
 _Update existing duck from provided ID_
 
-|||
+|Parameter|Content|
 |--|--|
 |URL|`/set-ducks/<id>`|
 |Method|`POST`|
@@ -61,9 +65,10 @@ Required Parameters
 |Price|`float` `i.e. 20.00`|
 
 **delete-duck/1**
+
 _Delete a specific duck from supplied ID_
 
-|||
+|Parameter|Content|
 |--|--|
 |URL|`/delete-duck/<id>`|
 |Method|`POST`|
