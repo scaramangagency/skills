@@ -13,12 +13,12 @@
     RewriteRule ^(.*)/$ /$1 [R=301,QSA,L]
 
     # Send to HTTPS
-    # RewriteCond %{HTTPS} !=on
-  	# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+    RewriteCond %{HTTPS} !=on
+  	RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
     # Don't have a site, just redirect to admin
-    RewriteRule ^$ /admin [L,R=301]
-    RewriteRule ^/$ /admin [L,R=301]
+    #RewriteRule ^$ /admin [L,R=301]
+    #RewriteRule ^/$ /admin [L,R=301]
 
     # Send would-be 404 requests to Craft
     RewriteCond %{REQUEST_FILENAME} !-f

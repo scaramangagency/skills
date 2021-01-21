@@ -41,6 +41,14 @@ class DefaultController extends Controller
     /**
      * @return mixed
      */
+    public function actionIndex()
+    {
+        throw new BadRequestHttpException('No endpoint exists at this URL');
+    }
+
+    /**
+     * @return mixed
+     */
     public function actionSetDucks($id = null)
     {
         $this->requirePostRequest();

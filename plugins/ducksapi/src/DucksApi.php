@@ -73,6 +73,7 @@ class DucksApi extends Plugin
             UrlManager::class,
             UrlManager::EVENT_REGISTER_SITE_URL_RULES,
             function (RegisterUrlRulesEvent $event) {
+                $event->rules['/'] = 'ducks-api/default/index';
                 $event->rules['get-ducks'] = 'ducks-api/default/get-ducks';
                 $event->rules['get-ducks/<id>'] = 'ducks-api/default/get-ducks';
                 $event->rules['set-ducks'] = 'ducks-api/default/set-ducks';
